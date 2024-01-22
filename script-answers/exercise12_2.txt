@@ -1,0 +1,19 @@
+Script started on 2024-01-22 18:28:40+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="105" LINES="51"]
+[?2004h]0;kjhahl@lx1-fuxi023: ~/Documents/koulu/fullstack_12/part12-containers-applications[01;32mkjhahl@lx1-fuxi023[00m:[01;34m~/Documents/koulu/fullstack_12/part12-containers-applications[00m$ sudo docker run ir[Kt [K[K[K-it ubu ntu bash
+[?2004l[sudo] password for kjhahl: 
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K29202e855b20: Pulling fs layer [1B[1A[2K29202e855b20: Downloading  310.6kB/29.55MB[1B[1A[2K29202e855b20: Downloading  1.543MB/29.55MB[1B[1A[2K29202e855b20: Downloading  3.096MB/29.55MB[1B[1A[2K29202e855b20: Downloading  4.336MB/29.55MB[1B[1A[2K29202e855b20: Downloading  5.581MB/29.55MB[1B[1A[2K29202e855b20: Downloading  6.826MB/29.55MB[1B[1A[2K29202e855b20: Downloading  8.067MB/29.55MB[1B[1A[2K29202e855b20: Downloading  9.292MB/29.55MB[1B[1A[2K29202e855b20: Downloading  10.53MB/29.55MB[1B[1A[2K29202e855b20: Downloading  11.77MB/29.55MB[1B[1A[2K29202e855b20: Downloading  13.02MB/29.55MB[1B[1A[2K29202e855b20: Downloading  14.58MB/29.55MB[1B[1A[2K29202e855b20: Downloading  15.82MB/29.55MB[1B[1A[2K29202e855b20: Downloading  17.07MB/29.55MB[1B[1A[2K29202e855b20: Downloading  18.31MB/29.55MB[1B[1A[2K29202e855b20: Downloading  20.16MB/29.55MB[1B[1A[2K29202e855b20: Downloading  21.72MB/29.55MB[1B[1A[2K29202e855b20: Downloading  23.28MB/29.55MB[1B[1A[2K29202e855b20: Downloading  24.83MB/29.55MB[1B[1A[2K29202e855b20: Downloading  26.36MB/29.55MB[1B[1A[2K29202e855b20: Downloading  27.61MB/29.55MB[1B[1A[2K29202e855b20: Downloading  28.85MB/29.55MB[1B[1A[2K29202e855b20: Verifying Checksum [1B[1A[2K29202e855b20: Download complete [1B[1A[2K29202e855b20: Extracting  327.7kB/29.55MB[1B[1A[2K29202e855b20: Extracting  8.192MB/29.55MB[1B[1A[2K29202e855b20: Extracting  16.71MB/29.55MB[1B[1A[2K29202e855b20: Extracting  25.89MB/29.55MB[1B[1A[2K29202e855b20: Extracting  29.55MB/29.55MB[1B[1A[2K29202e855b20: Pull complete [1BDigest: sha256:e6173d4dc55e76b87c4af8db8821b1feae4146dd47341e4d431118c7dd060a74
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@a79921dadbbd: /root@a79921dadbbd:/# [K]0;root@a79921dadbbd: /root@a79921dadbbd:/# 12  ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib32[0m  [01;36mlibx32[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;36mlib64[0m  [01;34mmedia[0m   [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@a79921dadbbd: /root@a79921dadbbd:/# mkditr   r  r /usr/src/appp 
+[?2004l[?2004h]0;root@a79921dadbbd: /root@a79921dadbbd:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@a79921dadbbd: /root@a79921dadbbd:/# [Kexit
+[?2004lexit
+[?2004h]0;kjhahl@lx1-fuxi023: ~/Documents/koulu/fullstack_12/part12-containers-applications[01;32mkjhahl@lx1-fuxi023[00m:[01;34m~/Documents/koulu/fullstack_12/part12-containers-applications[00m$ exit
+[?2004lexit
+
+Script done on 2024-01-22 18:33:39+02:00 [COMMAND_EXIT_CODE="0"]
