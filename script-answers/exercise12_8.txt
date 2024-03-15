@@ -1,0 +1,79 @@
+Script started on 2024-03-15 13:46:20+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="211" LINES="49"]
+[?2004h]0;kjhahl@lx1-fuxi023: ~/Documents/koulu/fullstack_12/fullstack-12/todo-app/todo-backend[01;32mkjhahl@lx1-fuxi023[00m:[01;34m~/Documents/koulu/fullstack_12/fullstack-12/todo-app/todo-backend[00m$ exitsudo docker exec -it todo-backend-mongo-1 bash[22Pcontainer lsmpose -f docker-compose.dev.yml up -d
+[?2004l[sudo] password for kjhahl: 
+[1A[1B[0G[?25l[+] Running 1/0
+ [32m✔[0m Container todo-backend-mongo-1  [32mRunning[0m                                                                                                                                                                    [34m0.0s [0m
+[?25h[?2004h]0;kjhahl@lx1-fuxi023: ~/Documents/koulu/fullstack_12/fullstack-12/todo-app/todo-backend[01;32mkjhahl@lx1-fuxi023[00m:[01;34m~/Documents/koulu/fullstack_12/fullstack-12/todo-app/todo-backend[00m$ sudo docker compose -f docker-compose.dev.yml up -dexit[Ksudo docker exec -it todo-backend-mongo-1 bash
+[?2004l[?2004hroot@ca7a1e73a7fc:/# exitmongosh -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	65f435258da50aebe15fa249
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.1[0m
+Using MongoDB:		7.0.5
+[1m[33mUsing Mongosh[0m:		2.1.1
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-03-15T11:29:08.504+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2024-03-15T11:29:08.899+00:00: Soft rlimits for open file descriptors too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7G[1G[0Jtest> db.todos.find({})[24G
+
+[1G[0Jtest> [7G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> db.todos.deleteOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[80G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> show collections[23G[1G[0Jtest> use the_database[23G[1G[0Jtest> show dbs[15G
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   72.00 KiB
+[1G[0Jtest> [7G[1G[0Jtest> show dbs[15G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> db.todos.deleteOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[80G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> show collections[23G[1G[0Jtest> use the_database[23G
+switched to db the_database
+[1G[0Jthe_database> [15G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   72.00 KiB
+[1G[0Jthe_database> [15G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.deleteOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[88G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G
+[1mtodos[0m
+[1G[0Jthe_database> [15G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.deleteOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[88G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'65f4310352dfdfffd930e467'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'65f4310352dfdfffd930e468'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.deleteOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[88G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: [33mfalse[39m})[101G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'65f4354f8da50aebe15fa24a'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: [33mfalse[39m})[101G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'65f4310352dfdfffd930e467'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'65f4310352dfdfffd930e468'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'65f4354f8da50aebe15fa24a'[39m),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: [33mfalse[39m})[101G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.deleteOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[88G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.deleteOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m})[88G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: [33mfalse[39m})[101G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> [15Gexit
+[?2004hroot@ca7a1e73a7fc:/# exit
+[?2004lexit
+[?2004h]0;kjhahl@lx1-fuxi023: ~/Documents/koulu/fullstack_12/fullstack-12/todo-app/todo-backend[01;32mkjhahl@lx1-fuxi023[00m:[01;34m~/Documents/koulu/fullstack_12/fullstack-12/todo-app/todo-backend[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-15 13:47:43+02:00 [COMMAND_EXIT_CODE="0"]
